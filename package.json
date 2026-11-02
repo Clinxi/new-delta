@@ -1,0 +1,22 @@
+{
+  "name": "launch-ceremony",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "手机扫码头像上墙与启动仪式控制系统",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --env-file-if-exists=.env --watch server.js",
+    "preview": "node scripts/preview.mjs",
+    "test": "node --test tests/*.test.js",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "image-size": "^2.0.4",
+    "qrcode": "^1.5.4"
+  }
+}

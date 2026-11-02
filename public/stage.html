@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090d15"><title>DELTA SPACE · 正式启动</title>
+  <link rel="stylesheet" href="/stage.css"><script src="/stage.js" defer></script>
+</head>
+<body data-theme="aurora" data-phase="waiting">
+  <div id="stageViewport">
+  <div class="event-backdrop" aria-hidden="true"></div><div class="lighting-overlay" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <svg class="event-asterisk asterisk-one" viewBox="0 0 100 100" aria-hidden="true"><path d="m39 5 22 0 0 26 23-13 11 19-23 13 23 13-11 19-23-13v26H39V69L16 82 5 63l23-13L5 37l11-19 23 13Z"/></svg>
+  <svg class="event-asterisk asterisk-two" viewBox="0 0 100 100" aria-hidden="true"><path d="m39 5 22 0 0 26 23-13 11 19-23 13 23 13-11 19-23-13v26H39V69L16 82 5 63l23-13L5 37l11-19 23 13Z"/></svg>
+  <header class="stage-header"><div class="brand" aria-label="DELTA SPACE"><strong>DELTA SPACE<span class="brand-increment" aria-hidden="true"></span></strong><small>LAUNCH DAY EVENT</small></div><div class="header-note"><span></span>让每个年轻人找到自己的增量 △</div><div class="event-status"><span id="connection" class="connection">连接中</span><span id="clock" title="北京时间"></span></div></header>
+  <main id="scene">
+    <div class="scene-label"><span>●</span><span id="phaseLabel">DELTA COMMUNITY / 共创者集结中</span><span class="scene-number">01</span></div>
+    <div class="core" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div id="avatars" aria-label="参与嘉宾头像"></div><div id="emptyHint" class="empty-hint">扫描二维码，点亮你的增量</div>
+    <div id="countdown" class="countdown" role="timer" aria-label="启动倒计时"></div>
+    <section id="reveal" class="reveal" aria-live="polite"><img id="revealLogo" alt="活动标志" hidden><div class="reveal-kicker">DELTA SPACE LAUNCH DAY EVENT</div><h2 id="launchText">正式启动</h2><p id="revealTitle"></p><div class="reveal-signature">让每个年轻人找到自己的增量 △</div></section>
+    <div id="burst" aria-hidden="true"></div>
+  </main>
+  <section class="event-copy"><div class="eyebrow"><span>DELTA SPACE</span><i></i>启动日活动</div><h1 id="eventTitle">DELTA SPACE</h1><p id="eventSubtitle">DELTA SPACE 启动日活动</p><div class="copy-rule" aria-hidden="true"></div><p class="invitation">让每个年轻人<br>找到自己的增量 <span>△</span></p></section>
+  <aside class="join-panel"><div class="qr-wrap"><img class="join-qr" alt="扫码加入本场启动仪式"></div><div class="join-copy"><span class="qr-eyebrow">YOUR INCREMENT STARTS HERE</span><strong id="joinLabel">扫码加入，共同启动 DELTA SPACE</strong><span id="joinStatus">上传头像 · 留下名字 · 见证启动</span><span class="qr-note">请使用微信扫码参与</span></div><span class="qr-corner" aria-hidden="true">↗</span></aside>
+  <div class="participation"><span class="count-label">WE MAKE THE NEXT</span><div><span id="participantCount">0</span><small>位共创者，已就位</small></div><span id="rotationNote"></span></div>
+  <footer class="stage-footer"><span>DELTA SPACE <i></i> LAUNCH DAY EVENT</span><span class="footer-signature">一起，找到新的增量</span><span id="sceneStep">01 / 共创者集结</span></footer>
+  </div>
+  <div class="stage-tools"><a href="/admin.html" target="_blank" rel="noopener">主持工作台 ↗</a><button id="sound" type="button" aria-pressed="false">开启声效</button><button id="fullscreen" type="button">全屏 F</button></div><div id="notice" role="status"></div>
+  <template id="wordmarkTemplate"><svg class="delta-wordmark" viewBox="0 0 600 200" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round"><path d="M10 10H65Q80 10 80 25V60Q80 75 65 75H10Z"/><path d="M120 10H185M120 42H180M120 75H185M120 10V75"/><path d="M230 10V75H295M340 10H420M380 10V75M445 75 483 10 522 75"/><path d="M145 120H85Q75 120 75 130V140Q75 150 85 150H135Q145 150 145 160V175Q145 185 135 185H75"/><path d="M185 185V120H240Q255 120 255 135V140Q255 155 240 155H185M285 185 320 120 355 185"/><path d="M465 120H410Q395 120 395 135V170Q395 185 410 185H465M505 120H575M505 152H570M505 185H575M505 120V185"/></g><path d="M-1 28V-1h29M575 172h24v27h-25" stroke="currentColor" stroke-width="1.5"/></svg></template>
+</body></html>

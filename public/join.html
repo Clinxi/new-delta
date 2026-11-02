@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090d15">
+  <title>DELTA SPACE 启动日活动 · 嘉宾参与</title>
+  <link rel="stylesheet" href="/mobile.css">
+  <script type="module" src="/join.js"></script>
+</head>
+<body>
+  <main class="join-shell">
+    <header class="brand"><span class="brand-name">DELTA SPACE</span><span class="brand-caption">启动日活动</span></header>
+    <div class="connection" id="connection" role="status"><i></i><span>正在连接现场</span></div>
+    <section class="intro">
+      <span class="eyebrow">LAUNCH DAY</span>
+      <h1 id="event-title">DELTA SPACE 启动日活动</h1>
+      <p id="event-subtitle">让每个年轻人找到自己的增量 △</p>
+    </section>
+    <section class="join-card" id="join-card" aria-labelledby="form-title">
+      <div class="card-heading"><span class="step">I</span><div><h2 id="form-title">一起，成为启动的力量</h2><p>留下你的名字，共同见证正式启动</p></div></div>
+      <form id="join-form">
+        <label class="avatar-picker" for="avatar-file">
+          <span class="avatar-preview" id="avatar-preview"><span aria-hidden="true">＋</span></span>
+          <span><strong>选择你的头像</strong><small>可选 · JPG / PNG / WebP</small></span>
+          <span class="upload-icon" aria-hidden="true">↗</span>
+        </label>
+        <input type="file" id="avatar-file" accept="image/jpeg,image/png,image/webp" class="visually-hidden">
+        <label class="field-label" for="nickname">现场昵称</label>
+        <input id="nickname" name="nickname" type="text" minlength="2" maxlength="20" placeholder="请输入 2–20 个字符" autocomplete="nickname" required>
+        <label class="consent"><input type="checkbox" id="consent" required><span>我同意将本次提交的昵称、头像展示在活动大屏上，并由活动主办方保存至场次数据清理。</span></label>
+        <p class="form-message" id="form-message" role="alert" hidden></p>
+        <button type="submit" class="primary-button" id="join-button" disabled><span>加入启动日活动</span><span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="privacy-note">无需授权微信资料 · 未上传头像时使用昵称图案</p>
+    </section>
+    <section class="success-card" id="success-card" hidden aria-live="polite">
+      <div class="success-orbit"><img id="success-avatar" alt="已加入的头像"><span>✓</span></div>
+      <span class="eyebrow">YOU ARE PART OF THE DELTA</span>
+      <h2 id="success-title">已加入，等待共同启幕</h2>
+      <p id="success-copy">抬头看看大屏，你的头像正在那里闪耀。</p>
+      <div class="participant-name" id="success-name"></div>
+      <button class="text-button" id="edit-profile" type="button">修改我的资料 ↗</button>
+    </section>
+    <section class="closed-card" id="closed-card" hidden aria-live="polite"><span class="eyebrow">LAUNCH DAY</span><h2 id="closed-title">启动仪式正在进行</h2><p id="closed-copy">请抬头看向大屏，与现场嘉宾共同见证。</p></section>
+    <div class="live-count"><div class="avatar-dots" aria-hidden="true"><span>↗</span><span>↗</span><span>↗</span></div><p><strong id="participant-count">0</strong> 位嘉宾已加入</p><span class="live-chip" id="phase-label">连接中</span></div>
+    <footer>让每个年轻人找到自己的增量 △</footer>
+  </main>
+</body>
+</html>
